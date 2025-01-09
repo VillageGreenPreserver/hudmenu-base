@@ -1,0 +1,10 @@
+event CompetitiveGame_RestoreChatWindow
+{
+	SetInputEnabled		giveaway_item	1			0.0
+	RunEventChild		giveaway_item	Refresh		0.0
+}
+
+event Refresh
+{
+	FireCommand		0.0		"reloadscheme"
+}
